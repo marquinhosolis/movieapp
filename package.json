@@ -2,7 +2,7 @@
 	"name": "movieapp",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://marquinhosolis.github.io/movieapp/",
+	"homepage": "https://movieapp-2r9v7w09r-marquinhosolis.vercel.app/",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.35",
 		"@fortawesome/free-regular-svg-icons": "^5.15.3",
