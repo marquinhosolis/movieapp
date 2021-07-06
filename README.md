@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## See this project online
+
+Open [https://movieapp-npxldiq7h-marquinhosolis.vercel.app/](https://movieapp-npxldiq7h-marquinhosolis.vercel.app/) to view it in the browser.
+
 ## Instal Dependencies
 
 ### `npm install`
