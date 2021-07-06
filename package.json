@@ -2,6 +2,7 @@
 	"name": "movieapp",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://marquinhosolis.github.io/movieapp/",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.35",
 		"@fortawesome/free-regular-svg-icons": "^5.15.3",
@@ -18,6 +19,7 @@
 		"web-vitals": "^1.1.2"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
