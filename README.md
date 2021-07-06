@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## See this project online
 
-Open [https://movieapp-npxldiq7h-marquinhosolis.vercel.app/](https://movieapp-npxldiq7h-marquinhosolis.vercel.app/) to view it in the browser.
+Open [https://movieapp-npxldiq7h-marquinhosolis.vercel.app/](https://movieapp-npxldiq7h-marquinhosolis.vercel.app/).
 
 ## Instal Dependencies
 
