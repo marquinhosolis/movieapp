@@ -1,0 +1,147 @@
+.itemsRow {
+	width: 100%;
+	padding: 10px 20px;
+	h2 {
+		margin: 30px 10px 0;
+		font-size: 24px;
+		&:after {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 2px;
+			margin-top: 15px;
+			background: #ff00f5;
+		}
+	}
+	.itemHeader {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.rowNavigation {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-top: 15px;
+		.rowNavigationRight {
+			opacity: 0.3;
+			margin: 0 8px;
+			cursor: pointer;
+			svg {
+				font-size: 24px;
+			}
+			&:hover {
+				opacity: 0.8;
+				svg {
+					color: #ff00f5;
+				}
+			}
+		}
+		.rowNavigationLeft {
+			opacity: 0.3;
+			margin: 0 8px;
+			cursor: pointer;
+			svg {
+				font-size: 24px;
+			}
+			&:hover {
+				opacity: 0.8;
+				svg {
+					color: #ff00f5;
+				}
+			}
+		}
+	}
+	ul {
+		transition: all linear 2s;
+		margin: 0;
+		padding: 30px;
+		list-style: none;
+		white-space: nowrap;
+		overflow-x: auto;
+		flex-wrap: wrap;
+		a {
+			text-decoration: none;
+		}
+		li {
+			position: relative;
+			transition: all linear 0.1s;
+			width: 220px;
+			display: inline-block;
+			vertical-align: top;
+			border-radius: 5px;
+			overflow-x: hidden;
+			border: solid 5px transparent;
+			.showcaseImage {
+				opacity: 0.8;
+				aspect-ratio: 300/450;
+				img {
+					object-fit: cover;
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+			}
+			.showcaseCopy {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				white-space: initial;
+				color: #fff;
+				padding: 0 5px;
+				background: linear-gradient(
+					180deg,
+					rgba(0, 0, 0, 0) 0%,
+					rgba(0, 0, 0, 1) 95%
+				);
+				display: flex;
+				justify-content: flex-end;
+				flex-direction: column;
+				height: 100%;
+				padding: 20px;
+				h3 {
+					margin: 0;
+					font-size: 24px;
+				}
+				.genres {
+					margin-top: 5px;
+					font-size: 12px;
+					line-height: 1.5;
+					color: #fff;
+					opacity: 0.3;
+					span {
+						display: inline-block;
+						padding-right: 5px;
+						margin-right: 5px;
+						border-right: solid 1px #fff;
+						&:last-child {
+							border: 0;
+						}
+					}
+				}
+				.seasonsTime {
+					color: #ff00f5;
+					margin-top: 10px;
+					font-size: 12px;
+					opacity: 0.7;
+					display: flex;
+					align-items: flex-end;
+					justify-content: space-between;
+					svg {
+						margin-right: 5px;
+					}
+				}
+			}
+			&:hover {
+				z-index: 2;
+				transform: scale(1.1);
+				box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+				border-color: #ff00f5;
+			}
+		}
+		@media (min-width: 1025px) {
+			overflow: hidden;
+		}
+	}
+}

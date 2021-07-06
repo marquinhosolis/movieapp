@@ -1,0 +1,68 @@
+.spotlight {
+	position: relative;
+	height: 80vh;
+	width: 100%;
+	aspect-ratio: 16/9;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	.spotLightImage {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		img {
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center center;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(
+				180deg,
+				rgba(34, 34, 34, 0) 0%,
+				rgba(34, 34, 34, 1) 100%
+			);
+		}
+	}
+
+	.spotLightCopy {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		padding: 30px;
+		max-width: 520px;
+		h1 {
+			font-size: 42px;
+			margin-bottom: 0;
+			&:after {
+				content: '';
+				display: block;
+				width: 50px;
+				height: 2px;
+				margin-top: 15px;
+				background: #ff00f5;
+			}
+		}
+		h2 {
+			line-height: 1.5;
+		}
+		p {
+			font-size: 13px;
+			opacity: 0.7;
+			line-height: 1.6;
+		}
+		.btn {
+			display: block;
+			@media (min-width: 768px) {
+				display: inline-block;
+			}
+		}
+	}
+}
